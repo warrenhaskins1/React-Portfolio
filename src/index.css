@@ -122,11 +122,9 @@ Convert HEX to RGBA - http://hex2rgba.devoth.com/
 }
 
 
-
-/* .header-custom {
-  border-bottom: ;
-} */
-
+.resume-img {
+width: auto;
+}
 
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
