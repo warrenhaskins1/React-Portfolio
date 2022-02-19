@@ -2,8 +2,18 @@ import React from "react";
 
 function Header({ currentPage, handlePageChange }) {
   return (
-    <header class="d-flex justify-content-center py-3">
-      <ul class="nav nav-pills nav-fill my-3">
+    <header class="blog-header py-3 text-center">
+      <div class="row align-items-center">
+        <div class="col-sm-12 align-items-center">
+          <h1 class="name fst-italic pt-4">
+            Warren <span class="midInit">G</span>
+            <span class="dot">. </span>
+            Haskins
+          </h1>
+          <hr />
+        </div>
+      </div>
+<nav class="nav d-flex justify-content-around">
         <li className="nav-item">
           <a
             href="#resume"
@@ -13,7 +23,7 @@ function Header({ currentPage, handlePageChange }) {
             }
             class="nav-link px-2 text-secondary"
           >
-            Resume 
+            Resume
           </a>
         </li>
         <li className="nav-item">
@@ -28,14 +38,14 @@ function Header({ currentPage, handlePageChange }) {
         </li>
         <li className="nav-item">
           <a
-            href="#portfolio"
-            onClick={() => handlePageChange("Portfolio")}
+            href="#projects"
+            onClick={() => handlePageChange("Projects")}
             className={
-              currentPage === "Portfolio" ? "nav-link active" : "nav-link"
+              currentPage === "Projects" ? "nav-link active" : "nav-link"
             }
             class="nav-link px-2 text-secondary"
           >
-            Portfolio
+            Projects
           </a>
         </li>
         <li className="nav-item">
@@ -47,12 +57,10 @@ function Header({ currentPage, handlePageChange }) {
             }
             class="nav-link px-2 text-secondary"
           >
-            Contact  <i
-                class="far fa-envelope"></i>
+            Contact
           </a>
         </li>
-      </ul>
-      
+      </nav>
     </header>
   );
 }
