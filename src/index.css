@@ -114,6 +114,10 @@ Convert HEX to RGBA - http://hex2rgba.devoth.com/
   max-width: 100%;
 }
 
+.contact-card {
+  width: 25rem;
+}
+
 .profile-pic {
   clip-path: circle();
   width: 195px;
